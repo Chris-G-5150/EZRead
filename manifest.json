@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "EZRead",
+  "version": "1.0.0.1",
+  "description": "A project to assist with readability for people with dyslexia",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "ez_read_48.png",
+      "128": "ez_read_128.png"
+    }
+  }
+}
